@@ -1,0 +1,14 @@
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson1\Lesson1\bin\Debug\net8.0\Lesson1.exe
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson1\Lesson1\bin\Debug\net8.0\Lesson1.deps.json
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson1\Lesson1\bin\Debug\net8.0\Lesson1.runtimeconfig.json
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson1\Lesson1\bin\Debug\net8.0\Lesson1.dll
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson1\Lesson1\bin\Debug\net8.0\Lesson1.pdb
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson1\Lesson1\obj\Debug\net8.0\Lesson1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson1\Lesson1\obj\Debug\net8.0\Lesson1.AssemblyInfoInputs.cache
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson1\Lesson1\obj\Debug\net8.0\Lesson1.AssemblyInfo.cs
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson1\Lesson1\obj\Debug\net8.0\Lesson1.csproj.CoreCompileInputs.cache
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson1\Lesson1\obj\Debug\net8.0\Lesson1.dll
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson1\Lesson1\obj\Debug\net8.0\refint\Lesson1.dll
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson1\Lesson1\obj\Debug\net8.0\Lesson1.pdb
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson1\Lesson1\obj\Debug\net8.0\Lesson1.genruntimeconfig.cache
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson1\Lesson1\obj\Debug\net8.0\ref\Lesson1.dll

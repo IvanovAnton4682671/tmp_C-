@@ -1,0 +1,11 @@
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson2\Lesson2\bin\Debug\Lesson2.exe.config
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson2\Lesson2\bin\Debug\Lesson2.exe
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson2\Lesson2\bin\Debug\Lesson2.pdb
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson2\Lesson2\obj\Debug\Lesson2.csproj.AssemblyReference.cache
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson2\Lesson2\obj\Debug\Lesson2.Form1.resources
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson2\Lesson2\obj\Debug\Lesson2.Properties.Resources.resources
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson2\Lesson2\obj\Debug\Lesson2.csproj.GenerateResource.cache
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson2\Lesson2\obj\Debug\Lesson2.csproj.CoreCompileInputs.cache
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson2\Lesson2\obj\Debug\Lesson2.exe
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson2\Lesson2\obj\Debug\Lesson2.pdb
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson2\Lesson2\obj\Debug\Lesson2.csproj.ResolveComReference.cache
