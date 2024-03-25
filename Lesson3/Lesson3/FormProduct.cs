@@ -19,8 +19,8 @@ namespace Lesson3
 
         public FormProduct(NpgsqlConnection conn)
         {
-            this.conn = conn;
             InitializeComponent();
+            this.conn = conn;
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
@@ -72,6 +72,16 @@ namespace Lesson3
             catch (Exception ex)
             {
             }
+        }
+
+        private void buttonProductChange_Click(object sender, EventArgs e)
+        {
+            int id = (int)dataGridViewProduct.CurrentRow.Cells["product_id"].Value;
+            string productName = (string)dataGridViewProduct.CurrentRow.Cells["product_name"].Value.ToString();
+            string productMeasurementUnits = (string)dataGridViewProduct.CurrentRow.Cells["product_measurement_units"].Value.ToString();
+            FormProductAdd formProductAdd = new FormProductAdd(conn, id, productName, productMeasurementUnits);
+            formProductAdd.ShowDialog();
+            Update();
         }
     }
 }

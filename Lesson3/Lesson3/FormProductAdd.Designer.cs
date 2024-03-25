@@ -39,7 +39,7 @@
             // textBoxProductName
             // 
             this.textBoxProductName.Location = new System.Drawing.Point(13, 36);
-            this.textBoxProductName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxProductName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxProductName.Name = "textBoxProductName";
             this.textBoxProductName.Size = new System.Drawing.Size(229, 29);
             this.textBoxProductName.TabIndex = 0;
@@ -47,7 +47,7 @@
             // textBoxProductMeasurementUnits
             // 
             this.textBoxProductMeasurementUnits.Location = new System.Drawing.Point(13, 96);
-            this.textBoxProductMeasurementUnits.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxProductMeasurementUnits.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxProductMeasurementUnits.Name = "textBoxProductMeasurementUnits";
             this.textBoxProductMeasurementUnits.Size = new System.Drawing.Size(229, 29);
             this.textBoxProductMeasurementUnits.TabIndex = 1;
@@ -100,7 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 403);
+            this.ClientSize = new System.Drawing.Size(482, 303);
             this.Controls.Add(this.buttonProductAddCancel);
             this.Controls.Add(this.buttonProductAddYes);
             this.Controls.Add(this.labelProductMeasurementUnits);
@@ -108,7 +108,7 @@
             this.Controls.Add(this.textBoxProductMeasurementUnits);
             this.Controls.Add(this.textBoxProductName);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormProductAdd";
             this.Text = "FormProductAdd";
             this.ResumeLayout(false);

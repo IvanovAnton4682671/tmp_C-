@@ -14,11 +14,26 @@ namespace Lesson3
     public partial class FormProductAdd : Form
     {
         public NpgsqlConnection conn;
+        public int productId = -1;
+        public string productName;
+        public string productMeasurementUnits;
 
         public FormProductAdd(NpgsqlConnection conn)
         {
-            this.conn = conn;
             InitializeComponent();
+            this.conn = conn;
+            this.StartPosition = FormStartPosition.CenterScreen;
+        }
+
+        public FormProductAdd(NpgsqlConnection conn, int productId, string productName, string productMeasurementUnits)
+        {
+            InitializeComponent();
+            this.conn = conn;
+            this.productId = productId;
+            this.productName = productName;
+            this.productMeasurementUnits = productMeasurementUnits;
+            textBoxProductName.Text = productName;
+            textBoxProductMeasurementUnits.Text = productMeasurementUnits;
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
@@ -29,17 +44,28 @@ namespace Lesson3
 
         private void buttonProductAddYes_Click(object sender, EventArgs e)
         {
-            try
-            {
-                NpgsqlCommand command = new NpgsqlCommand("INSERT INTO Product (product_name, product_measurement_units) VALUES (:product_name, :product_measurement_units)", conn);
-                command.Parameters.AddWithValue("product_name", textBoxProductName.Text);
-                command.Parameters.AddWithValue("product_measurement_units", textBoxProductMeasurementUnits.Text);
-                command.ExecuteNonQuery();
-                Close();
-            }
-            catch (Exception ex)
-            {
-            }
+            Console.WriteLine("Попали в butProdAddYes_Click");
+            
+                if (this.productId == -1)
+                {
+                    Console.WriteLine("Попали в блок для add");
+                    NpgsqlCommand command = new NpgsqlCommand("INSERT INTO Product (product_name, product_measurement_units) VALUES (:product_name, :product_measurement_units)", conn);
+                    command.Parameters.AddWithValue("product_name", textBoxProductName.Text);
+                    command.Parameters.AddWithValue("product_measurement_units", textBoxProductMeasurementUnits.Text);
+                    command.ExecuteNonQuery();
+                    Close();
+                }
+                else
+                {
+                    Console.WriteLine("Попали в блок для update");
+                    NpgsqlCommand command = new NpgsqlCommand("UPDATE Product SET product_name = :product_name, product_measurement_units = :product_measurement_units WHERE product_id = :product_id", conn);
+                    command.Parameters.AddWithValue("product_id", this.productId);
+                    command.Parameters.AddWithValue("product_name", textBoxProductName.Text);
+                    command.Parameters.AddWithValue("product_measurement_units", textBoxProductMeasurementUnits.Text);
+                    command.ExecuteNonQuery();
+                    Close();
+                }
+            
         }
     }
 }
