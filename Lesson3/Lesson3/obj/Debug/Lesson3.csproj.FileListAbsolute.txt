@@ -43,3 +43,6 @@ C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environ
 C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson3\Lesson3\obj\Debug\Lesson3.FormMain.resources
 C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson3\Lesson3\obj\Debug\Lesson3.FormProduct.resources
 C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson3\Lesson3\obj\Debug\Lesson3.FormProductAdd.resources
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson3\Lesson3\obj\Debug\Lesson3.FormClient.resources
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson3\Lesson3\obj\Debug\Lesson3.FormClientAdd.resources
+C:\Users\Anton\Desktop\Programming\Application_development_in_integrated_environments\Lesson3\Lesson3\obj\Debug\Lesson3.FormAllFutura.resources

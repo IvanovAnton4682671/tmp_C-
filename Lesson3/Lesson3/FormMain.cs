@@ -33,5 +33,18 @@ namespace Lesson3
             FormProduct formProduct = new FormProduct(conn);
             formProduct.ShowDialog();
         }
+
+        private void buttonClient_Click(object sender, EventArgs e)
+        {
+            FormClient formClient = new FormClient(conn);
+            formClient.ShowDialog();
+
+        }
+
+        private void buttonAllFutura_Click(object sender, EventArgs e)
+        {
+            FormAllFutura formAllFutura = new FormAllFutura(conn);
+            formAllFutura.ShowDialog();
+        }
     }
 }

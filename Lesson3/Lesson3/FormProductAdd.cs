@@ -37,18 +37,12 @@ namespace Lesson3
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
-        private void buttonProductAddCancel_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void buttonProductAddYes_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("Попали в butProdAddYes_Click");
-            
+            try
+            {
                 if (this.productId == -1)
                 {
-                    Console.WriteLine("Попали в блок для add");
                     NpgsqlCommand command = new NpgsqlCommand("INSERT INTO Product (product_name, product_measurement_units) VALUES (:product_name, :product_measurement_units)", conn);
                     command.Parameters.AddWithValue("product_name", textBoxProductName.Text);
                     command.Parameters.AddWithValue("product_measurement_units", textBoxProductMeasurementUnits.Text);
@@ -57,7 +51,6 @@ namespace Lesson3
                 }
                 else
                 {
-                    Console.WriteLine("Попали в блок для update");
                     NpgsqlCommand command = new NpgsqlCommand("UPDATE Product SET product_name = :product_name, product_measurement_units = :product_measurement_units WHERE product_id = :product_id", conn);
                     command.Parameters.AddWithValue("product_id", this.productId);
                     command.Parameters.AddWithValue("product_name", textBoxProductName.Text);
@@ -65,7 +58,13 @@ namespace Lesson3
                     command.ExecuteNonQuery();
                     Close();
                 }
-            
+            }
+            catch (Exception ex) { }
+        }
+
+        private void buttonProductAddCancel_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

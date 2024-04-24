@@ -59,6 +59,16 @@ namespace Lesson3
             Update();
         }
 
+        private void buttonProductChange_Click(object sender, EventArgs e)
+        {
+            int id = (int)dataGridViewProduct.CurrentRow.Cells["product_id"].Value;
+            string productName = (string)dataGridViewProduct.CurrentRow.Cells["product_name"].Value.ToString();
+            string productMeasurementUnits = (string)dataGridViewProduct.CurrentRow.Cells["product_measurement_units"].Value.ToString();
+            FormProductAdd formProductAdd = new FormProductAdd(conn, id, productName, productMeasurementUnits);
+            formProductAdd.ShowDialog();
+            Update();
+        }
+
         private void buttonProductDel_Click(object sender, EventArgs e)
         {
             try
@@ -69,19 +79,7 @@ namespace Lesson3
                 command.ExecuteNonQuery();
                 Update();
             }
-            catch (Exception ex)
-            {
-            }
-        }
-
-        private void buttonProductChange_Click(object sender, EventArgs e)
-        {
-            int id = (int)dataGridViewProduct.CurrentRow.Cells["product_id"].Value;
-            string productName = (string)dataGridViewProduct.CurrentRow.Cells["product_name"].Value.ToString();
-            string productMeasurementUnits = (string)dataGridViewProduct.CurrentRow.Cells["product_measurement_units"].Value.ToString();
-            FormProductAdd formProductAdd = new FormProductAdd(conn, id, productName, productMeasurementUnits);
-            formProductAdd.ShowDialog();
-            Update();
+            catch (Exception ex) { }
         }
     }
 }
